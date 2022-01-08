@@ -18,8 +18,12 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from mytable;")
+tablas = run_query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';")
+lista = []
+for table in tablas:
+    lista.append(str(table)[2:-3])
 
-# Print results.
-for row in rows:
-    st.write(f"{row[0]} has a :{row[1]}:")
+df_tables = pd.DataFrame(lista)
+df_tables.columns=['Tablas']
+
+if lista != []: st.dataframe(df_tables)
