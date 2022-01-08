@@ -1,6 +1,7 @@
 # streamlit_app.py
 import streamlit as st
 import psycopg2
+import pandas as pd
 
 # Initialize connection.
 # Uses st.cache to only run once.
