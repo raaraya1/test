@@ -1,5 +1,6 @@
 import streamlit as st
 import subprocess
-subprocess.run(["ls", "-l"])
+out = subprocess.call(["ls"]).read()
+st.write(out)
 
 #python setup.py install
