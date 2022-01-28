@@ -1,7 +1,10 @@
 import streamlit as st
 import subprocess
+import os
 
-subprocess.call(["apt-get update"])
+cmd =  "apt-get update"
+os.system(cmd)
+
 out = subprocess.call(["ls"]).stdout.read()
 st.write(str(out))
 
