@@ -2,7 +2,7 @@ import streamlit as st
 import subprocess
 import os
 
-cmd =  "ls"
+cmd =  "sh SCIPOptSuite-7.0.2-Linux-debian.sh"
 os.system(cmd)
 
 
