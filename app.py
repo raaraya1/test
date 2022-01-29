@@ -2,7 +2,7 @@ import streamlit as st
 import subprocess
 import os
 
-os.system("tar SCIPOptSuite-7.0.2.gz")
+os.system("tar SCIPOptSuite-7.0.2.tgz")
 cmd =  "sh SCIPOptSuite-7.0.2-Linux-debian.sh"
 os.system(cmd)
 
