@@ -2,6 +2,7 @@ import streamlit as st
 import subprocess
 import os
 
+print(os.getcwd())
 #os.system("apt-get update")
 #os.system("apt-get install build-essential libreadline-dev libz-dev libgmp3-dev lib32ncurses5-dev libboost-program-options-dev")
 os.system("cd test/scipoptsuite-7.0.2")
