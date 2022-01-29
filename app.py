@@ -7,7 +7,7 @@ import os
 os.system("cd scipoptsuite-7.0.2")
 #os.system("apt-get install cmake")
 #os.system("mkdir build")
-os.system("cd build")
+#os.system("cd build")
 os.system("cmake .. | tail -n +91")
 os.system("make")
 os.system("make install")
