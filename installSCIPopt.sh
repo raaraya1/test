@@ -7,7 +7,6 @@ B='\n\e[1m'
 
 function test(){
   while true; do
-
       printf "Running GCG on some sample instances...";
       cd gcg/
         if [ $1 = 1 ]
@@ -19,7 +18,6 @@ function test(){
         fi
       printf "${B}Done!${W}";
       break;;
-
   done
 }
 
@@ -50,13 +48,11 @@ function fmake(){
 
 function installPrerequisites(){
   while true; do
-
       echo "Updating Package Manager..."
       sudo apt-get update
       echo "Installing prerequisites..."
       sudo apt-get install build-essential libreadline-dev libz-dev libgmp3-dev lib32ncurses5-dev libboost-program-options-dev
       break;;
-
   done
 }
 
@@ -82,9 +78,8 @@ function install(){
 
   while true; do
       printf "${B}Install the SCIP Optimization Suite using...${W}"
-                fcmake;
-                  break;;
-
+            fcmake;
+              break;;
   done
 }
 
@@ -93,5 +88,4 @@ while true; do
     printf "${B}The SCIP Optimization Suite will be installed into the current folder.${W}"
               install;
                 break;;
-      
 done
