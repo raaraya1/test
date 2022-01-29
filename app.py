@@ -3,13 +3,17 @@ import subprocess
 import os
 
 #cmd =  "sh SCIPOptSuite-7.0.2-Linux-debian.sh"
+#os.system("cmake -Bbuild -H. [-DSOPLEX_DIR=/path/to/soplex]")
+#os.system("cmake --build build")
 os.system("tar xvzf scipoptsuite-7.0.2.tgz")
 os.system("cd scipoptsuite-7.0.2")
-os.system("./configure")
-os.system("make")
-os.system("make gcg")
+os.system("mkdir build")
+os.system("cd build")
+os.system("cmake .. [-DSOPLEX_DIR=/path/to/soplex]")
 
-#os.system(cmd)
+os.system("make")
+os.system("make check")
+os.system("make install") 
 
 
 #python setup.py install
