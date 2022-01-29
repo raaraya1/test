@@ -2,9 +2,9 @@ import streamlit as st
 import subprocess
 import os
 
-#os.system("tar SCIPOptSuite-7.0.2.tgz")
-cmd =  "sh SCIPOptSuite-7.0.2-Linux-debian.sh"
-os.system(cmd)
+os.system("cd scipoptsuite-7.0.2")
+os.system("make")
+os.system("make gcg")
 
 
 
