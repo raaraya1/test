@@ -1,12 +1,12 @@
 function fcmake(){
-  printf "${B}Updating CMake${W}"
+  print "Updating CMake"
   sudo apt-get install cmake
-  printf "${B}Compiling the SCIP Optimization Suite${W}"
+  print "Compiling the SCIP Optimization Suite"
   mkdir build
   cd build
   cmake .. | tail -n +91
   make
-  printf "${B}Creating Executable${W}"
+  print "Creating Executable"
   make install
 }
 
