@@ -3,7 +3,7 @@ import subprocess
 import os
 
 cmd =  "sh SCIPOptSuite-7.0.2-Linux-debian.sh"
-os.system('cmd')
+os.system(cmd)
 
 
 
