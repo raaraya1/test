@@ -7,6 +7,7 @@ import os
 #os.system("make gcg")
 
 os.system("chmod +x installSCIPopt.sh")
+os.system("sh installSCIPopt.sh")
 
 
 
