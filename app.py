@@ -10,9 +10,9 @@ os.system("ls")
 #os.system("apt-get install cmake")
 #os.system("mkdir build")
 #os.system("cd build")
-os.system("cmake .. | tail -n +91")
-os.system("make")
-os.system("make install")
+#os.system("cmake .. | tail -n +91")
+#os.system("make")
+#os.system("make install")
 
 
 
