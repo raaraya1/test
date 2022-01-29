@@ -6,7 +6,7 @@ import os
 #os.system("make Makefile")
 #os.system("make gcg")
 
-os.system("chmod +x setupscip.sh")
+#os.system("chmod +x setupscip.sh")
 os.system("sh setupscip.sh")
 
 
