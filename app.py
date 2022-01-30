@@ -7,8 +7,11 @@ st.write(os.getcwd())
 #os.system("pwd")
 #os.system("apt-get install cmake")
 os.system("cmake /app/test/scipoptsuite-7.0.2 | tail -n +91")
-os.system("make /app/test/scipoptsuite-7.0.2")
+os.system("make I /app/test/scipoptsuite-7.0.2")
 os.system("make install")
+
+##
+#../env
 
 #os.system("make")
 #os.system("make install")
